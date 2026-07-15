@@ -94,4 +94,4 @@ Em desenvolvimento.
 **José Lourenço Costa da Silva**
 
 - GitHub: https://github.com/JoseLourencoCosta
-- LinkedIn: _(em breve)_
+- LinkedIn: https://www.linkedin.com/in/joselourencocostadasilva/
