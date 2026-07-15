@@ -2,6 +2,7 @@
 import { ref } from "vue";
 import { specialties } from "../../data/specialties";
 import "./Specialties.css";
+import SectionTitle from "../common/SectionTitle/SectionTitle.vue";
 
 const activeSpecialtyId = ref(null);
 
@@ -13,16 +14,11 @@ function toggleSpecialty(id) {
 <template>
   <section class="specialties" id="especialidades">
     <div class="specialties__container">
-      <div class="specialties__heading">
-        <span>Especialidades</span>
-
-        <h2>Um cuidado pensado para diferentes necessidades</h2>
-
-        <p>
-          Conheça as abordagens utilizadas no Studio Vitta Pilates e descubra
-          qual delas mais combina com seus objetivos.
-        </p>
-      </div>
+      <SectionTitle
+        eyebrow="Especialidades"
+        title="Um cuidado pensado para diferentes necessidades"
+        description="Conheça as abordagens utilizadas no Studio Vitta Pilates e descubra qual delas mais combina com seus objetivos."
+      />
 
       <div class="specialties__list">
         <article

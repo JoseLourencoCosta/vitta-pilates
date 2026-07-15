@@ -1,0 +1,24 @@
+.section-title {
+  max-width: 720px;
+  margin-bottom: 48px;
+}
+
+.section-title__eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.section-title__heading {
+  margin-bottom: 16px;
+  color: var(--color-text);
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-title);
+}
+
+.section-title__description {
+  color: var(--color-muted);
+  font-size: 1.05rem;
+  line-height: var(--line-height-body);
+}

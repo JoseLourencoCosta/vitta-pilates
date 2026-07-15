@@ -8,31 +8,6 @@
   margin: 0 auto;
 }
 
-.benefits__heading {
-  max-width: 720px;
-  margin-bottom: 48px;
-}
-
-.benefits__heading span {
-  display: inline-block;
-  margin-bottom: 12px;
-  color: var(--color-primary);
-  font-weight: 700;
-}
-
-.benefits__heading h2 {
-  margin-bottom: 16px;
-  color: var(--color-text);
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  line-height: 1.1;
-}
-
-.benefits__heading p {
-  color: var(--color-muted);
-  font-size: 1.05rem;
-  line-height: 1.7;
-}
-
 .benefits__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

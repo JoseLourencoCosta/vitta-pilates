@@ -1,0 +1,10 @@
+:root {
+  --section-padding: 96px;
+
+  --container-width: 1120px;
+
+  --radius-large: 24px;
+  --radius-xl: 48px;
+
+  --transition-default: 0.3s ease;
+}

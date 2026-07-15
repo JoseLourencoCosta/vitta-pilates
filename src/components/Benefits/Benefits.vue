@@ -10,6 +10,7 @@ import {
 
 import { benefits } from "../../data/benefits";
 import "./Benefits.css";
+import SectionTitle from "../common/SectionTitle/SectionTitle.vue";
 
 const icons = {
   AlignVerticalJustifyCenter,
@@ -24,16 +25,11 @@ const icons = {
 <template>
   <section class="benefits" id="beneficios">
     <div class="benefits__container">
-      <div class="benefits__heading">
-        <span>Benefícios</span>
-
-        <h2>Movimento que transforma sua rotina</h2>
-
-        <p>
-          O Pilates contribui para uma vida mais ativa, equilibrada e
-          confortável, respeitando o ritmo e as necessidades de cada aluno.
-        </p>
-      </div>
+      <SectionTitle
+        eyebrow="Benefícios"
+        title="Movimento que transforma sua rotina"
+        description="O Pilates contribui para uma vida mais ativa, equilibrada e confortável, respeitando o ritmo e as necessidades de cada aluno."
+      />
 
       <div class="benefits__grid">
         <article

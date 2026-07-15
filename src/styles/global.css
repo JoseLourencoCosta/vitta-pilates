@@ -1,9 +1,16 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--color-background);
-  color: var(--color-text);
-}
+@import "./reset.css";
+@import "./variables.css";
+@import "./typography.css";
+@import "./spacing.css";
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
 }
