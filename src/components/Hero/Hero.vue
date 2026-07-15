@@ -1,18 +1,21 @@
 <script setup>
-import './Hero.css'
+import "./Hero.css";
 </script>
 
 <template>
   <section class="hero" id="inicio">
     <div class="hero__container">
       <div class="hero__content">
-        <span class="hero__tag">Studio Vitta Pilates • Nogueira, Petrópolis</span>
+        <span class="hero__tag"
+          >Studio Vitta Pilates • Nogueira, Petrópolis</span
+        >
 
         <h1>Pilates para cuidar do corpo com equilíbrio e movimento</h1>
 
         <p>
-          Atendimento com Adriana Lima, unindo Pilates clínico, clássico,
-          contemporâneo e funcional em um espaço pensado para seu bem-estar.
+          No Studio Vitta Pilates, cada atendimento é pensado para promover
+          saúde, qualidade de vida e bem-estar, respeitando os objetivos e as
+          necessidades de cada aluno.
         </p>
 
         <div class="hero__actions">
@@ -36,12 +39,7 @@ import './Hero.css'
         </div>
       </div>
 
-      <div class="hero__visual" aria-hidden="true">
-        <div class="hero__card">
-          <span>Pilates clínico</span>
-          <strong>Clássico • Contemporâneo • Funcional</strong>
-        </div>
-      </div>
+      <div class="hero__visual" aria-hidden="true"></div>
     </div>
   </section>
 </template>
