@@ -1,5 +1,9 @@
 .hero {
-  min-height: calc(100vh - 120px);
+  min-height: calc(100vh - 104px);
+
+  display: flex;
+  align-items: center;
+
   background:
     radial-gradient(
       circle at top right,
@@ -7,8 +11,6 @@
       transparent 32%
     ),
     linear-gradient(135deg, #f7fbfb 0%, #ffffff 52%, #eef8f8 100%);
-  display: flex;
-  align-items: center;
 }
 
 .hero__container {
@@ -17,50 +19,61 @@
 
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
+  grid-template-areas: "content visual";
   align-items: center;
-  gap: 64px;
+  gap: 72px;
 }
 
 .hero__content {
+  grid-area: content;
   max-width: 680px;
 }
 
 .hero__tag {
   display: inline-block;
   margin-bottom: 18px;
+
   color: var(--color-primary);
   font-weight: 700;
   letter-spacing: 0.02em;
 }
 
 .hero h1 {
+  margin-bottom: 24px;
+
+  color: var(--color-text);
   font-size: clamp(2.4rem, 5vw, 5rem);
   line-height: 1.05;
-  color: var(--color-text);
-  margin-bottom: 24px;
 }
 
 .hero p {
-  font-size: 1.15rem;
-  line-height: 1.7;
-  color: var(--color-muted);
   max-width: 620px;
   margin-bottom: 36px;
+
+  color: var(--color-muted);
+  font-size: 1.15rem;
+  line-height: 1.7;
 }
 
 .hero__actions {
   display: flex;
   align-items: center;
-  gap: 16px;
   flex-wrap: wrap;
+  gap: 16px;
 }
 
 .hero__button {
   padding: 14px 24px;
+
   border-radius: 999px;
+
   font-weight: 700;
   text-decoration: none;
-  transition: 0.3s ease;
+
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 .hero__button:hover {
@@ -74,22 +87,130 @@
 
 .hero__button--primary:hover {
   background-color: var(--color-primary-dark);
+  box-shadow: 0 10px 24px rgba(43, 140, 143, 0.2);
 }
 
 .hero__button--secondary {
-  color: var(--color-primary);
   border: 1px solid var(--color-primary);
+
   background-color: transparent;
+  color: var(--color-primary);
+}
+
+.hero__button--secondary:hover {
+  background-color: rgba(43, 140, 143, 0.06);
 }
 
 .hero__visual {
+  grid-area: visual;
+
+  width: 100%;
   min-height: 520px;
-  border-radius: 48px;
+
   overflow: hidden;
 
+  border-radius: 48px;
+
   background:
-    linear-gradient(145deg, rgba(47, 143, 143, 0.08), rgba(118, 184, 42, 0.06)),
+    linear-gradient(145deg, rgba(47, 143, 143, 0.04), rgba(118, 184, 42, 0.03)),
     url("../../assets/images/hero-pilates.png") center / cover no-repeat;
 
   box-shadow: 0 24px 60px rgba(31, 45, 45, 0.12);
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: auto;
+    padding: 56px 0 72px;
+  }
+
+  .hero__container {
+    width: min(720px, 90%);
+
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "visual"
+      "content";
+    gap: 44px;
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__visual {
+    min-height: 440px;
+    border-radius: 40px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.7rem, 8vw, 4.2rem);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 32px 0 56px;
+  }
+
+  .hero__container {
+    width: 92%;
+    gap: 32px;
+  }
+
+  .hero__visual {
+    min-height: 310px;
+    border-radius: 30px;
+
+    background-position: center;
+  }
+
+  .hero__tag {
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+  }
+
+  .hero h1 {
+    margin-bottom: 20px;
+
+    font-size: clamp(2.25rem, 11vw, 3.2rem);
+    line-height: 1.02;
+  }
+
+  .hero p {
+    margin-bottom: 28px;
+
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .hero__button {
+    width: 100%;
+    padding: 14px 20px;
+
+    text-align: center;
+  }
+}
+
+/* Celulares menores */
+
+@media (max-width: 380px) {
+  .hero__visual {
+    min-height: 270px;
+    border-radius: 26px;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
 }

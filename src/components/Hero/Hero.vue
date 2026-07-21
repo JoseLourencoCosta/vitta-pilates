@@ -13,7 +13,7 @@ import "./Hero.css";
         <h1>Pilates para cuidar do corpo com equilíbrio e movimento</h1>
 
         <p>
-          No Studio Vitta Pilates, cada atendimento é pensado para promover
+          No Studio Vitta Pilates, cada atendimento é planejado para promover
           saúde, qualidade de vida e bem-estar, respeitando os objetivos e as
           necessidades de cada aluno.
         </p>

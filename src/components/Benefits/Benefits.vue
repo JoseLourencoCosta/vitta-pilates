@@ -27,7 +27,7 @@ const icons = {
     <div class="benefits__container">
       <SectionTitle
         eyebrow="Benefícios"
-        title="Movimento que transforma sua rotina"
+        title="Benefícios que acompanham você dentro e fora do estúdio"
         description="O Pilates contribui para uma vida mais ativa, equilibrada e confortável, respeitando o ritmo e as necessidades de cada aluno."
       />
 

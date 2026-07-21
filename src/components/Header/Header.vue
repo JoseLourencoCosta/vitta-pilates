@@ -1,12 +1,16 @@
 <script setup>
-import './Header.css'
-import logoVittaPilates from '../../assets/logo/logo-vitta-pilates.png'
+import "./Header.css";
+import logoVittaPilates from "../../assets/logo/logo-vitta-pilates.png";
 </script>
 
 <template>
   <header class="header">
     <div class="header__container">
-      <a href="#" class="header__brand" aria-label="Vitta Pilates - Página inicial">
+      <a
+        href="#inicio"
+        class="header__brand"
+        aria-label="Studio Vitta Pilates - Página inicial"
+      >
         <img
           :src="logoVittaPilates"
           alt="Logo Vitta Pilates"
@@ -16,8 +20,10 @@ import logoVittaPilates from '../../assets/logo/logo-vitta-pilates.png'
 
       <nav class="header__nav" aria-label="Navegação principal">
         <a href="#inicio">Início</a>
+        <a href="#especialidades">Especialidades</a>
         <a href="#beneficios">Benefícios</a>
         <a href="#sobre">Sobre</a>
+        <a href="#depoimentos">Depoimentos</a>
         <a href="#contato">Contato</a>
       </nav>
 

@@ -33,7 +33,8 @@
 
 .specialties__card--active {
   border-color: var(--color-primary);
-  box-shadow: 0 18px 40px rgba(31, 45, 45, 0.08);
+  background-color: var(--color-white);
+  box-shadow: 0 18px 40px rgba(31, 45, 45, 0.1);
 }
 
 .specialties__button {
@@ -56,8 +57,8 @@
 }
 
 .specialties__icon {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   flex-shrink: 0;
 
   display: grid;
@@ -79,7 +80,7 @@
 }
 
 .specialties__content {
-  padding: 8px 24px 24px 24px;
+  padding: 10px 28px 28px;
 }
 
 .specialties__content p {
@@ -91,8 +92,8 @@
 .specialty-content-leave-active {
   overflow: hidden;
   transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
+    opacity 0.35s ease,
+    transform 0.35s ease;
 }
 
 .specialty-content-enter-from,
@@ -103,6 +104,7 @@
 
 .specialties__card--active .specialties__button > span:first-child {
   color: var(--color-primary);
+  font-size: 1.15rem;
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,42 @@
+export const testimonials = [
+  {
+    id: 1,
+    name: "Patrícia Lima",
+    rating: 5,
+    featured: true,
+    text: "Frequento o estúdio há algum tempo e a experiência tem sido excelente. O ambiente é muito agradável, limpo e organizado, o que faz toda diferença no dia a dia. Os profissionais são extremamente atenciosos e qualificados, sempre corrigindo os movimentos e adaptando os exercícios conforme a necessidade de cada aluno. Percebi melhora na postura, redução de dores e mais disposição no dia a dia.",
+    source: "Google",
+  },
+  {
+    id: 2,
+    name: "Carlos Zambrotti",
+    rating: 5,
+    featured: false,
+    text: "Sem sombra de dúvidas o melhor estúdio de Pilates de Petrópolis. Atendimento maravilhoso com profissional super competente, ambiente cheio de aparelhos de primeira e tudo muito limpo. Recomendo!",
+    source: "Google",
+  },
+  {
+    id: 3,
+    name: "Alexandre Charão",
+    rating: 5,
+    featured: false,
+    text: "Super recomendo. Faço Pilates há 15 anos, já experimentei vários lugares e o Vitta Pilates é muito bom mesmo. Me ajuda bastante!",
+    source: "Google",
+  },
+  {
+    id: 4,
+    name: "Rafaela Tedesco",
+    rating: 5,
+    featured: false,
+    text: "Maravilhosa! A professora Adriana é incrível. Super experiente e atenciosamente.",
+    source: "Google",
+  },
+  {
+    id: 5,
+    name: "Marina Daniel",
+    rating: 5,
+    featured: false,
+    text: "Equipe incrível! Aparelhos novos e super atualizados. Recomendo!",
+    source: "Google",
+  },
+];

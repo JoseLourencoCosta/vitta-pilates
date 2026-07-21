@@ -1,16 +1,21 @@
 .header {
-  width: 100%;
-  background-color: var(--color-white);
-  border-bottom: 1px solid var(--color-border);
   position: sticky;
   top: 0;
   z-index: 1000;
+
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .header__container {
   width: min(1280px, 90%);
+  height: 114px;
   margin: 0 auto;
-  height: 120px;
 
   display: flex;
   align-items: center;
@@ -21,46 +26,125 @@
 .header__brand {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
+
+  text-decoration: none;
 }
 
 .header__logo {
-  height: 88px;
   width: auto;
+  height: 82px;
   display: block;
+
+  transform: scale(1.12);
+  transform-origin: left center;
 }
 
 .header__nav {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 28px;
 }
 
 .header__nav a {
+  position: relative;
+
   color: var(--color-text);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  line-height: 1;
   text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+.header__nav a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: var(--color-primary);
+  border-radius: 999px;
+
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
 }
 
 .header__nav a:hover {
   color: var(--color-primary);
 }
 
+.header__nav a:hover::after {
+  transform: scaleX(1);
+}
+
 .header__button {
+  flex-shrink: 0;
+
+  padding: 12px 20px;
+
   background-color: var(--color-primary);
   color: var(--color-white);
-  padding: 12px 20px;
+
   border-radius: 999px;
+
   font-weight: 600;
+  line-height: 1.4;
   text-decoration: none;
   white-space: nowrap;
 
   transition:
     background-color 0.3s ease,
+    box-shadow 0.3s ease,
     transform 0.3s ease;
 }
 
 .header__button:hover {
   background-color: var(--color-primary-dark);
+  box-shadow: 0 8px 20px rgba(21, 148, 153, 0.2);
   transform: translateY(-2px);
+}
+
+.header__brand:focus-visible,
+.header__nav a:focus-visible,
+.header__button:focus-visible {
+  outline: 3px solid rgba(21, 148, 153, 0.25);
+  outline-offset: 5px;
+}
+
+@media (max-width: 900px) {
+  .header__container {
+    width: min(1280px, 92%);
+    height: 88px;
+    gap: 20px;
+  }
+
+  .header__logo {
+    height: 68px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .header__container {
+    height: 80px;
+  }
+
+  .header__logo {
+    height: 60px;
+  }
+
+  .header__button {
+    padding: 10px 15px;
+    font-size: 0.875rem;
+  }
 }
