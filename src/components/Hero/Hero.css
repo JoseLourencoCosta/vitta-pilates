@@ -113,7 +113,7 @@
 
   background:
     linear-gradient(145deg, rgba(47, 143, 143, 0.04), rgba(118, 184, 42, 0.03)),
-    url("../../assets/images/hero-pilates.png") center / cover no-repeat;
+    url("../../assets/images/hero-pilates.webp") center / cover no-repeat;
 
   box-shadow: 0 24px 60px rgba(31, 45, 45, 0.12);
 }
@@ -163,10 +163,14 @@
   }
 
   .hero__visual {
-    min-height: 310px;
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 1 / 1;
+
     border-radius: 30px;
 
     background-position: center;
+    background-size: cover;
   }
 
   .hero__tag {
@@ -206,7 +210,7 @@
 
 @media (max-width: 380px) {
   .hero__visual {
-    min-height: 270px;
+    aspect-ratio: 1 / 1;
     border-radius: 26px;
   }
 

@@ -1,7 +1,7 @@
 <script setup>
 import { Instagram, MapPin, MessageCircle } from "lucide-vue-next";
 
-import logoVittaPilates from "../../assets/logo/logo-vitta-pilates.png";
+import logoVittaPilates from "../../assets/logo/logo-vitta-vertical.png";
 import "./Footer.css";
 
 const currentYear = new Date().getFullYear();

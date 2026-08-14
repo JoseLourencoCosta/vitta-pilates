@@ -19,7 +19,7 @@
 
   background:
     linear-gradient(145deg, rgba(47, 143, 143, 0.05), rgba(118, 184, 42, 0.03)),
-    url("../../assets/images/about-pilates.png") center / cover no-repeat;
+    url("../../assets/images/about-pilates.webp") center / cover no-repeat;
 
   box-shadow: var(--shadow-lg);
 }

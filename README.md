@@ -1,23 +1,31 @@
 # 🧘 Studio Vitta Pilates
 
-Landing page desenvolvida em **Vue 3 + Vite** para o **Studio Vitta Pilates**, com foco em uma experiência moderna, elegante e responsiva. O projeto também faz parte do meu portfólio Front-end, aplicando boas práticas de componentização, organização de código e experiência do usuário (UX).
+Landing page institucional desenvolvida em **Vue 3 + Vite** para o **Studio Vitta Pilates**, com foco em uma experiência moderna, elegante, responsiva e acessível.
 
-> ✅ Landing page institucional em fase final de desenvolvimento.
+O projeto também faz parte do meu portfólio Front-end, aplicando boas práticas de componentização, organização de código, experiência do usuário (UX), responsividade e otimização para produção.
+
+> ✅ Interface concluída e preparada para publicação.
 
 ---
 
 ## ✨ Funcionalidades
 
 - ✅ Header fixo com navegação
+- ✅ Menu responsivo com navegação mobile
 - ✅ Hero Section
-- ✅ Seção de Especialidades (Accordion)
+- ✅ Seção de Especialidades com Accordion
 - ✅ Seção de Benefícios
 - ✅ Seção Sobre o Studio
 - ✅ Depoimentos de clientes
 - ✅ CTA para WhatsApp
 - ✅ Footer institucional
+- ✅ Links para Instagram, WhatsApp e localização
 - ✅ Componentes reutilizáveis
-- ✅ Layout responsivo
+- ✅ Layout responsivo para Desktop, Tablet e Mobile
+- ✅ Estados de foco para navegação por teclado
+- ✅ Nova identidade visual do Studio Vitta Pilates
+- ✅ Imagens otimizadas em WebP
+- ✅ Favicon personalizado
 
 ---
 
@@ -38,6 +46,8 @@ Landing page desenvolvida em **Vue 3 + Vite** para o **Studio Vitta Pilates**, c
 ```text
 src/
 ├── assets/
+│   ├── images/
+│   └── logo/
 ├── components/
 │   ├── common/
 │   ├── Header/
@@ -58,7 +68,19 @@ src/
 
 ## 🎯 Objetivo
 
-Desenvolver uma landing page profissional para um estúdio de Pilates, aplicando boas práticas de desenvolvimento Front-end, componentização, organização de código, experiência do usuário (UX), acessibilidade e responsividade.
+Desenvolver uma landing page profissional para um estúdio de Pilates, aplicando boas práticas de desenvolvimento Front-end, componentização, organização de código, experiência do usuário (UX), acessibilidade, responsividade e otimização de recursos para produção.
+
+---
+
+## ⚡ Performance
+
+As principais imagens da aplicação foram convertidas de PNG para WebP para reduzir o tamanho dos arquivos e melhorar o carregamento da página.
+
+Exemplos:
+
+- Hero: aproximadamente 2 MB → 112 KB
+- Imagem institucional: aproximadamente 2,16 MB → 103 KB
+- Logo horizontal: aproximadamente 323 KB → 160 KB
 
 ---
 
@@ -74,6 +96,11 @@ Desenvolver uma landing page profissional para um estúdio de Pilates, aplicando
 - [x] CTA
 - [x] Footer
 - [x] Responsividade
+- [x] Menu mobile
+- [x] Nova identidade visual
+- [x] Favicon
+- [x] Otimização de imagens
+- [x] Build de produção
 - [ ] SEO
 - [ ] Open Graph
 - [ ] Sitemap
@@ -90,13 +117,12 @@ Em breve.
 
 ## 📌 Próximas melhorias
 
-- Implementar SEO completo
+- Implementar SEO
 - Configurar Open Graph
 - Gerar sitemap.xml
 - Configurar robots.txt
 - Publicar a aplicação
-- Integrar Google Maps
-- Implementar formulário de contato
+- Validar performance em ambiente de produção
 
 ---
 

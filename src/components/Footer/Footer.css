@@ -32,15 +32,15 @@
 }
 
 .footer__logo-wrapper {
-  width: 72px;
-  height: 62px;
-  padding: 7px 10px;
+  width: 96px;
+  height: 88px;
+  padding: 8px;
 
   display: grid;
   place-items: center;
 
-  border-radius: 16px;
-  background-color: rgba(255, 255, 255, 0.96);
+  border-radius: 18px;
+  background-color: var(--color-white);
 
   transition:
     transform 0.3s ease,
@@ -171,7 +171,7 @@
 
 .footer__logo-link:focus-visible,
 .footer__links a:focus-visible {
-  outline: 3px solid rgba(43, 140, 143, 0.45);
+  outline: 3px solid rgba(2, 98, 106, 0.45);
   outline-offset: 5px;
   border-radius: 8px;
 }
@@ -208,8 +208,8 @@
   }
 
   .footer__logo-wrapper {
-    width: 76px;
-    height: 66px;
+    width: 88px;
+    height: 80px;
   }
 
   .footer__brand p {

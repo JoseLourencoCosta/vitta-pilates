@@ -1,6 +1,19 @@
 <script setup>
+import { ref } from "vue";
+import { Menu, X } from "lucide-vue-next";
+
 import "./Header.css";
-import logoVittaPilates from "../../assets/logo/logo-vitta-pilates.png";
+import logoVittaPilates from "../../assets/logo/logo-vitta-horizontal.webp";
+
+const isMobileMenuOpen = ref(false);
+
+const toggleMobileMenu = () => {
+  isMobileMenuOpen.value = !isMobileMenuOpen.value;
+};
+
+const closeMobileMenu = () => {
+  isMobileMenuOpen.value = false;
+};
 </script>
 
 <template>
@@ -10,6 +23,7 @@ import logoVittaPilates from "../../assets/logo/logo-vitta-pilates.png";
         href="#inicio"
         class="header__brand"
         aria-label="Studio Vitta Pilates - Página inicial"
+        @click="closeMobileMenu"
       >
         <img
           :src="logoVittaPilates"
@@ -35,6 +49,42 @@ import logoVittaPilates from "../../assets/logo/logo-vitta-pilates.png";
       >
         Agende uma aula
       </a>
+
+      <button
+        class="header__menu-button"
+        type="button"
+        :aria-expanded="isMobileMenuOpen"
+        aria-controls="mobile-navigation"
+        aria-label="Abrir menu de navegação"
+        @click="toggleMobileMenu"
+      >
+        <X v-if="isMobileMenuOpen" :size="26" />
+        <Menu v-else :size="26" />
+      </button>
     </div>
+
+    <nav
+      id="mobile-navigation"
+      class="header__mobile-nav"
+      :class="{ 'header__mobile-nav--open': isMobileMenuOpen }"
+      aria-label="Navegação mobile"
+    >
+      <a href="#inicio" @click="closeMobileMenu">Início</a>
+      <a href="#especialidades" @click="closeMobileMenu"> Especialidades </a>
+      <a href="#beneficios" @click="closeMobileMenu"> Benefícios </a>
+      <a href="#sobre" @click="closeMobileMenu"> Sobre </a>
+      <a href="#depoimentos" @click="closeMobileMenu"> Depoimentos </a>
+      <a href="#contato" @click="closeMobileMenu"> Contato </a>
+
+      <a
+        href="https://wa.me/5521968413603"
+        class="header__mobile-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        @click="closeMobileMenu"
+      >
+        Agende uma aula
+      </a>
+    </nav>
   </header>
 </template>

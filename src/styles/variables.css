@@ -1,20 +1,23 @@
 :root {
   /* Brand Colors */
-  --color-primary: #2b8c8f;
-  --color-primary-dark: #247272;
-  --color-secondary: #76b82a;
+  --color-primary: #02626a;
+  --color-primary-dark: #014d53;
+  --color-secondary: #94b56b;
+
+  /* Supporting Brand Colors */
+  --color-accent-soft: #cfe3d6;
 
   /* Neutral Colors */
   --color-white: #ffffff;
-  --color-background: #f7fbfb;
+  --color-background: #f4f6f3;
   --color-surface: #ffffff;
 
-  --color-text: #1f2d2d;
-  --color-muted: #5f6f6f;
-  --color-border: #e5eeee;
+  --color-text: #2b2f33;
+  --color-muted: #5f696b;
+  --color-border: #e6e9e8;
 
   /* Shadows */
-  --shadow-sm: 0 8px 20px rgba(31, 45, 45, 0.08);
-  --shadow-md: 0 18px 40px rgba(31, 45, 45, 0.1);
-  --shadow-lg: 0 24px 60px rgba(31, 45, 45, 0.12);
+  --shadow-sm: 0 8px 20px rgba(43, 47, 51, 0.08);
+  --shadow-md: 0 18px 40px rgba(43, 47, 51, 0.1);
+  --shadow-lg: 0 24px 60px rgba(43, 47, 51, 0.12);
 }
