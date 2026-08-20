@@ -29,3 +29,4 @@ dist-ssr
 
 # Windows
 Thumbs.db
+.vercel

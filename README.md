@@ -101,17 +101,17 @@ Exemplos:
 - [x] Favicon
 - [x] Otimização de imagens
 - [x] Build de produção
-- [ ] SEO
-- [ ] Open Graph
-- [ ] Sitemap
-- [ ] robots.txt
-- [ ] Deploy
+- [x] SEO
+- [x] Open Graph
+- [x] Sitemap
+- [x] robots.txt
+- [x] Deploy
 
 ---
 
 ## 🌐 Demonstração
 
-Em breve.
+https://vitta-pilates-eight.vercel.app/
 
 ---
 
